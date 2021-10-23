@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CSS for Header */
+
+header{
+    width: 100%;
+    height: 70px;
+    -webkit-box-shadow: 0 6px 6px -6px #3F4238;
+	   -moz-box-shadow: 0 6px 6px -6px #3F4238;
+	        box-shadow: 0 6px 6px -6px #3F4238;
+    position: fixed;
+         
+}
+.headul{
+    float: right;
+    padding: 8px;
+}
+.headli{
+    display: inline-block;
+    padding: 15px 15px;
+}
+.heada{
+    font-size: 18px;
+    color: #161A1D;
+    text-decoration: none;
+}
+.headbtn{
+    font-size: 18px;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    background-color: #BCB6FF;
+    border-radius: 8px;
+    text-decoration: none;
+    background: linear-gradient(to left,#BCB6FF 50%,#A9FFF7 50%)right;
+    background-size: 200%;
+    transition: .5s ease-out;
+}
+.headbtn:hover {
+    background-position: left;
+}
+.menu{
+    width: 45px;
+    margin-left: 15px;
+    padding: 11px;
+    float: left;
+}
+.logo{
+    width: 170px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .headul{
+        display: none;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .headul{
+        display: none;
+    }
+}
+
+/* CSS Code for Sidebar */
+
+.sidediv{
+    height: 100vh;
+    position: absolute;
+    width: 18%;
+    background-color: #94FBAB;
+}
+.cancel{
+    width: 25px;
+    padding: 12px;
+}
+.sideul{
+    text-align: center;
+    margin-top: 25px;
+}
+.sidebtn{
+    font-size: 18px;
+    padding: 10px 45px;
+    background-color: #BCB6FF;
+    border-radius: 8px;
+    text-decoration: none;
+    background: linear-gradient(to left,#BCB6FF 50%,#A9FFF7 50%)right;
+    background-size: 200%;
+    transition: .5s ease-out;
+    border: none;
+    color: white;
+}
+.sidebtn:hover{
+    background-position: left;
+}
+.sideulm{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .sidediv{
+        height: 100vh;
+        position: absolute;
+        width: 60%;
+        background-color: #94FBAB;
+    }
+    .sideulm{
+        text-align: center;
+        display: inline;
+    }
+    .sideli{
+        margin-top: 15px;
+    }
+    .sidea{
+        text-decoration: none;
+        color: #161A1D;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .sidediv{
+        height: 100vh;
+        position: absolute;
+        width: 60%;
+        background-color: #94FBAB;
+    }
+    .sideulm{
+        text-align: center;
+        display: inline;
+    }
+    .sideli{
+        margin-top: 15px;
+    }
+    .sidea{
+        text-decoration: none;
+        color: #161A1D;
+    }
+    .sidebtn{
+        font-size: 18px;
+        padding: 10px 22px;
+        background-color: #BCB6FF;
+        border-radius: 8px;
+        text-decoration: none;
+        background: linear-gradient(to left,#BCB6FF 50%,#A9FFF7 50%)right;
+        background-size: 200%;
+        transition: .5s ease-out;
+        border: none;
+        color: white;
+    }
+}
+
+/* POPup CSS starts here */
+
+.popdiv{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    padding: 20px 20px;
+    background-color: #82aba1;
+    border-radius: 8px;
+    text-align: center;
+}
+.popinp{
+    padding: 10px 25px;
+    border: none;
+    width: 77%;
+    margin-bottom: 15px;
+}
+.popsel{
+    padding: 8px 15px;
+    border: none;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.popbtn{
+    padding: 8px 15px;
+    width: 60%;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #BCB6FF;
+    background: linear-gradient(to left,#BCB6FF 50%,#A9FFF7 50%)right;
+    background-size: 200%;
+    transition: .5s ease-out;
+    color: white;
+}
+.popbtn:hover{
+    background-position: left;
+}
+
+/* CSS code for all events */
+.popdiv{
+    display: none;
+}
+.sidediv{
+    display: none;
+}
+.card{
+    top: 100px;
+    left: 30px;
+    position: absolute;
+    z-index: -200;
+    text-align: center;
+    padding: 10px 10px;
+    -webkit-box-shadow: 0 3px 7px -3px #3F4238;
+	   -moz-box-shadow: 0 3px 7px -3px #3F4238;
+       box-shadow: 0 3px 7px -3px #3F4238;
+    border-radius: 8px;   
+}
+.btncard{
+    padding: 8px 15px;
+    width: 60%;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #BCB6FF;
+    background: linear-gradient(to left,#BCB6FF 50%,#A9FFF7 50%)right;
+    background-size: 200%;
+    transition: .5s ease-out;
+    color: white;
+    margin-bottom: 10px;
+}
+.btncard:hover{
+    background-position: left;
+}
+.imgcard{
+    width: 250px;
+}
+.cardh2{
+    margin-top: 10px;
+}
